@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Canvas Рисование</title>
+  <title>тест<\title>
 </head>
 <body>
-  <h1>Пример изображения на Canvas</h1>
-  <canvas id="myCanvas" width="300" height="300"></canvas>
+  <h1 id="title">Заголовок<\h1>
+  <button 
+onclick="changeTitle()">Изменить заголовок</button>
 
-  <script>
-    const canvas = document.getElementById('myCanvas');
-    const ctx = canvas.getContext('2d');
+    <script>
+      function changeTitle() {
 
-    // Рисуем детализированное изображение
-    ctx.fillStyle = 'orange';
-    ctx.fillRect(20, 20, 260, 260);
-
-    ctx.fillStyle = 'blue';
-    ctx.beginPath();
-    ctx.arc(150, 150, 100, 0, Math.PI * 2);
-    ctx.fill();
-  </script>
+        document.getElementBuId("title").innerText = "Заголовок Изменен!";
+      }
+    </script>
 </body>
 </html>
